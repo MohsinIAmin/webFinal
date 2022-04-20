@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
         data => {
           console.log(data);
           console.log(localStorage.getItem('id'))
+          this.router.navigate(['view'])
         },
         error => {
           console.log(error);

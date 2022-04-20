@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="mt-2 container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="input-group-btn rounded"><button type="button" class="btn btn-outline-primary mr-1" (click)="addNewTransaction()">Add New Transation</button></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-2 container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Transaction No</th>
+                    <th scope="col">Items</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let transaction of transactions; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{transaction.titems}}</td>
+                    <td>
+                        <span class="input-group-btn rounded"><button type="button" class="btn btn-outline-primary mr-1" (click)="updateTransaction(transaction)">Update</button></span>
+                        <span class="input-group-btn rounded"><button type="button" class="btn btn-outline-primary mr-1" (click)="deleteTransaction(transaction)">Delete</button></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

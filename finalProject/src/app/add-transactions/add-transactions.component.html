@@ -1,0 +1,13 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <div class="fadeIn">
+            <div>Add New Transation</div>
+        </div>
+
+        <form>
+            <input type="text" id="name" class="fadeIn" placeholder="items" [(ngModel)]="transaction" [ngModelOptions]="{standalone: true}" />
+            <input type="submit" class="fadeIn" value="submit" (click)="addTransaction()" />
+
+        </form>
+    </div>
+</div>
