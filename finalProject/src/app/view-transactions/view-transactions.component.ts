@@ -21,12 +21,7 @@ export class ViewTransactionsComponent implements OnInit {
   addNewTransaction() {
     this.router.navigate(['add'])
   }
-  updateTransaction(transaction: Transaction) {
 
-  }
-  deleteTransaction(transaction: Transaction) {
-
-  }
   getTransactions() {
     let shopid = localStorage.getItem('id');
     this.transactionService.getTransactions(shopid)

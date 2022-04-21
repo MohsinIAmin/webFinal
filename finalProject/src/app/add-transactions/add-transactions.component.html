@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="wrapper fadeInDown">
+<!-- <div class="wrapper fadeInDown">
     <div id="formContent">
         <div class="fadeIn">
             <div>Add New Transation</div>
@@ -11,4 +11,24 @@
 
         </form>
     </div>
+</div> -->
+<div class="global-container">
+    <div class="card update-form">
+        <div class="card-body">
+            <h1 class="card-title text-center">Add Transaction</h1>
+            <div class="card-text">
+                <form >
+                    <div class="form-group">
+                        <label for="iList">ItemList </label>
+                        <input type="text" class="form-control form-control-sm" id="passI" [(ngModel)]="transaction" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" id="mybtn"(click)="addTransaction()" >Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
+
+

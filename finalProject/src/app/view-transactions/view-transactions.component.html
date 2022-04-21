@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="container">
+<!-- <div class="container">
     <div class="mt-2 container">
         <div class="row">
             <div class="col-md-4">
@@ -28,5 +28,44 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+</div> -->
+
+
+<div class="mt-1 container">
+    <div class="row">
+        <div class="col-md-1">
+            <button id="bdtn" type="button" class="btn btn-primary" (click)="addNewTransaction()">Add New Transation</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="table-responsive" data-pattern="priority-columns">
+                <div class="bg">
+                    <table class="tco">
+                        <thead>
+                            <h2>Transactions</h2>
+                            <tr>
+                                <th data-priority="1">Shop ID</th>
+                                <th data-priority="2">Transaction ID</th>
+                                <th data-priority="3">Item List</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let transaction of transactions; let i = index">
+                                <td>{{transaction.shopid}}</td>
+                                <td>{{transaction.tid}}</td>
+                                <td>{{transaction.items}}</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+            <!--end of .table-responsive-->
+        </div>
     </div>
 </div>

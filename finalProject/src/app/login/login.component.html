@@ -18,21 +18,19 @@
         <div class="card-body">
             <h1 class="card-title text-center">Login</h1>
             <div class="card-text">
-                <form>
+                <form >
                     <div class="form-group">
-                        <label for="emailI">Name: </label>
-                        <input type="text" id="name" class="fadeIn" placeholder="user name" [(ngModel)]="shopStore.username" [ngModelOptions]="{standalone: true}" />
-
+                        <label for="emailI">Name: </label><br>
+                        <input type="text" class="form-control form-control-sm" id="emailI" [(ngModel)]="shopStore.username" [ngModelOptions]="{standalone: true}">
                     </div>
                     <div class="form-group">
                         <label for="passI">Password: </label>
-                        <!-- <a href="#" style="float:right; font-size: 12px">Forgot Password?</a> -->
-                        <input type="password" id="password" class="fadeIn" placeholder="Password" [(ngModel)]="shopStore.password" [ngModelOptions]="{standalone: true}" />
+                        <input type="password" class="form-control form-control-sm" id="passI" [(ngModel)]="shopStore.password" [ngModelOptions]="{standalone: true}">
                     </div>
                     <div>
-                        <button class="btn btn-primary" id="mybtn" (click)="login()">Sign in</button>
+                        <button class="btn btn-primary" id="mybtn"(click)="login()" >Sign in</button>
                         <div class="signup">
-                            Don't have an account?<a href="/rg">Create One</a>
+                            Don't have an account?<a href="/signup">Create One</a>
                         </div>
                     </div>
                 </form>
@@ -40,3 +38,4 @@
         </div>
     </div>
 </div>
+

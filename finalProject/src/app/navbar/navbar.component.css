@@ -15,13 +15,15 @@ img {
 }
 
 .allnavitems {
-    background-color: #10EBA7;
+    background-color: #ffffff;
 }
 
 li {
     border: 1.5px;
     border-color: bisque;
     font-weight: 200;
+    background-color: brown;
+    color: red;
 }
 
 img {
@@ -30,14 +32,14 @@ img {
 
 li:hover {
     background-color: rgba(44, 9, 55, 0.1);
-    color: white;
+    color: rgb(141, 139, 20);
     border: 1px black dotted;
 }
 
 .nav-item {
     border-radius: 5px;
     border: 3px;
-    background-color: white;
+    background-color: rgb(230, 211, 172);
 }
 
 a {

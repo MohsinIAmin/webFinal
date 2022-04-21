@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
   }
 
   getSuggestions(): void {
-    this.router.navigate(['']);
+    this.router.navigate(['appr']);
   }
   logout(): void {
     localStorage.removeItem('id');

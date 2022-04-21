@@ -1,1 +1,43 @@
-<p>appriori works!</p>
+<!-- <div class="wrapper fadeInDown">
+    <div id="formContent">
+        <div class="fadeIn">
+            <div>Shop Login</div>
+        </div>
+
+        <form>
+            <input type="text" id="name" class="fadeIn" placeholder="user name" [(ngModel)]="shopStore.username" [ngModelOptions]="{standalone: true}" />
+            <input type="password" id="password" class="fadeIn" placeholder="Password" [(ngModel)]="shopStore.password" [ngModelOptions]="{standalone: true}" />
+            <input type="submit" class="fadeIn" value="Login" (click)="login()" />
+            <p class="text-center text-muted mt-5 mb-0">Dont have an account? <a class="fw-bold text-body" (click)="registerClick()"><u>Create one</u></a></p>
+
+        </form>
+    </div>
+</div> -->
+<app-navbar></app-navbar>
+<div class="global-container">
+    <div class="card login-form">
+        <div class="card-body">
+            <h1 class="card-title text-center">Suggestions: </h1>
+            <div class="card-text">
+                <form>
+                    <div class="form-group">
+                        <label for="emailI">Items: </label><br>
+                        <input type="text" class="form-control form-control-sm" id="emailI" [(ngModel)]="item_set" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" id="mybtn" (click)="appriori()">Get Suggestion</button>
+                    </div>
+                    <div>
+
+                        <ul>
+                            <li *ngFor=" let str of res">{{str}}</li>
+                        </ul>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
