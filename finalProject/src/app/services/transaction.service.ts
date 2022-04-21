@@ -17,7 +17,7 @@ export class TransactionService {
         return Transaction;
       }));
   }
-  getTransactions(){
-    
+  getTransactions(shopid: any) {
+    return this.http.get<Transaction[]>(`${environment.apiUrl}/getTransactions.php?shopid=${shopid}`);
   }
 }

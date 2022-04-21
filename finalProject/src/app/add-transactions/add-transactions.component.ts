@@ -24,8 +24,7 @@ export class AddTransactionsComponent implements OnInit {
         data => {
           console.log(data);
           this.router.navigate(['view'])
-        },
-        error => { }
+        }
       )
 
   }

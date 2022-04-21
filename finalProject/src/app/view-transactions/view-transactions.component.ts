@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { first } from 'rxjs';
 import { Transaction } from '../models/transaction';
 import { TransactionService } from '../services/transaction.service';
 
@@ -9,24 +10,32 @@ import { TransactionService } from '../services/transaction.service';
   styleUrls: ['./view-transactions.component.css']
 })
 export class ViewTransactionsComponent implements OnInit {
-  
+
   transactions: Transaction[] = [];
 
-  constructor(private router : Router, private transactionService : TransactionService) { }
+  constructor(private router: Router, private transactionService: TransactionService) { }
 
   ngOnInit(): void {
     this.getTransactions();
   }
-  addNewTransaction(){
+  addNewTransaction() {
     this.router.navigate(['add'])
   }
-  updateTransaction(transaction: Transaction){
+  updateTransaction(transaction: Transaction) {
 
   }
-  deleteTransaction(transaction: Transaction){
+  deleteTransaction(transaction: Transaction) {
 
   }
-  getTransactions(){
+  getTransactions() {
+    let shopid = localStorage.getItem('id');
+    this.transactionService.getTransactions(shopid)
+      .subscribe(response => {
+        console.log(response);
+        this.transactions = response.map(Transaction => {
+          return Transaction;
+        })
+      })
   }
 
 }

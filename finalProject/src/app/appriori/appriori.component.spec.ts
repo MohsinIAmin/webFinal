@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TransactionsViewComponent } from './transactions-view.component';
+import { ApprioriComponent } from './appriori.component';
 
-describe('TransactionsViewComponent', () => {
-  let component: TransactionsViewComponent;
-  let fixture: ComponentFixture<TransactionsViewComponent>;
+describe('ApprioriComponent', () => {
+  let component: ApprioriComponent;
+  let fixture: ComponentFixture<ApprioriComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TransactionsViewComponent ]
+      declarations: [ ApprioriComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TransactionsViewComponent);
+    fixture = TestBed.createComponent(ApprioriComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

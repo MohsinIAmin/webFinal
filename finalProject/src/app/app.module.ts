@@ -7,18 +7,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
-import { TransactionsViewComponent } from './transactions-view/transactions-view.component';
 import { AddTransactionsComponent } from './add-transactions/add-transactions.component';
 import { ViewTransactionsComponent } from './view-transactions/view-transactions.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ApprioriComponent } from './appriori/appriori.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LoginComponent,
-    TransactionsViewComponent,
     AddTransactionsComponent,
-    ViewTransactionsComponent
+    ViewTransactionsComponent,
+    NavbarComponent,
+    ApprioriComponent
   ],
   imports: [
     BrowserModule,

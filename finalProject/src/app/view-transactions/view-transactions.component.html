@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="mt-2 container">
         <div class="row">
@@ -19,7 +20,7 @@
             <tbody>
                 <tr *ngFor="let transaction of transactions; let i = index">
                     <td>{{i+1}}</td>
-                    <td>{{transaction.titems}}</td>
+                    <td>{{transaction.items}}</td>
                     <td>
                         <span class="input-group-btn rounded"><button type="button" class="btn btn-outline-primary mr-1" (click)="updateTransaction(transaction)">Update</button></span>
                         <span class="input-group-btn rounded"><button type="button" class="btn btn-outline-primary mr-1" (click)="deleteTransaction(transaction)">Delete</button></span>

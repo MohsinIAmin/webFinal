@@ -1,4 +1,4 @@
-<div class="wrapper fadeInDown">
+<!-- <div class="wrapper fadeInDown">
     <div id="formContent">
         <div class="fadeIn">
             <div>Shop Login</div>
@@ -11,5 +11,32 @@
             <p class="text-center text-muted mt-5 mb-0">Dont have an account? <a class="fw-bold text-body" (click)="registerClick()"><u>Create one</u></a></p>
 
         </form>
+    </div>
+</div> -->
+<div class="global-container">
+    <div class="card login-form">
+        <div class="card-body">
+            <h1 class="card-title text-center">Login</h1>
+            <div class="card-text">
+                <form>
+                    <div class="form-group">
+                        <label for="emailI">Name: </label>
+                        <input type="text" id="name" class="fadeIn" placeholder="user name" [(ngModel)]="shopStore.username" [ngModelOptions]="{standalone: true}" />
+
+                    </div>
+                    <div class="form-group">
+                        <label for="passI">Password: </label>
+                        <!-- <a href="#" style="float:right; font-size: 12px">Forgot Password?</a> -->
+                        <input type="password" id="password" class="fadeIn" placeholder="Password" [(ngModel)]="shopStore.password" [ngModelOptions]="{standalone: true}" />
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" id="mybtn" (click)="login()">Sign in</button>
+                        <div class="signup">
+                            Don't have an account?<a href="/rg">Create One</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
