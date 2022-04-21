@@ -11,6 +11,7 @@ import { AddTransactionsComponent } from './add-transactions/add-transactions.co
 import { ViewTransactionsComponent } from './view-transactions/view-transactions.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ApprioriComponent } from './appriori/appriori.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ApprioriComponent } from './appriori/appriori.component';
     AddTransactionsComponent,
     ViewTransactionsComponent,
     NavbarComponent,
-    ApprioriComponent
+    ApprioriComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

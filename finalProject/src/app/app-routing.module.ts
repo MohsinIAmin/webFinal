@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'add', component: AddTransactionsComponent },
   { path: 'view', component: ViewTransactionsComponent },
-  {path: 'appr',component:ApprioriComponent}
+  {path: 'appr',component:ApprioriComponent},
+
 ];
 
 @NgModule({
